@@ -1,6 +1,6 @@
 {
   "build": {
-    "dockerfile": "./Dockerfile.zeabur"
+    "dockerfile": "./Dockerfile.final"
   },
   "env": {
     "PORT": {

@@ -1,0 +1,19 @@
+FROM node:22-slim
+
+WORKDIR /app
+
+# Copy everything
+COPY . .
+
+# Install dependencies (skip optional scripts that might fail)
+RUN npm install --ignore-scripts || true
+
+# Set environment
+ENV NODE_ENV=production
+ENV PORT=8080
+ENV OPENCLAW_SKIP_CHANNELS=1
+
+EXPOSE 8080
+
+# Run gateway test script to debug and start
+CMD ["node", "gateway-test.js"]
