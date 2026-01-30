@@ -1,11 +1,6 @@
 {
   "build": {
-    "node_version": "22",
-    "build_command": "npm install --omit=dev",
-    "output_dir": "."
-  },
-  "run": {
-    "start_command": "npm start"
+    "dockerfile": "./Dockerfile.zeabur"
   },
   "env": {
     "PORT": {
