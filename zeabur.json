@@ -1,0 +1,31 @@
+{
+  "build": {
+    "node_version": "22",
+    "build_command": "pnpm install && pnpm ui:build && pnpm build",
+    "output_dir": "dist"
+  },
+  "run": {
+    "start_command": "node scripts/run-node.mjs gateway"
+  },
+  "env": {
+    "PORT": {
+      "default": "3000"
+    },
+    "NODE_ENV": {
+      "default": "production"
+    },
+    "OPENCLAW_CONFIG_PATH": {
+      "default": "/app/openclaw.json"
+    }
+  },
+  "ports": [
+    {
+      "port": 3000,
+      "protocol": "HTTP"
+    }
+  ],
+  "deploy": {
+    "auto_deploy": true,
+    "branch": "main"
+  }
+}
