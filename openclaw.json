@@ -1,0 +1,24 @@
+{
+  "agent": {
+    "model": "anthropic/claude-3-5-sonnet-latest"
+  },
+  "gateway": {
+    "port": 3000,
+    "host": "0.0.0.0",
+    "enabled": true
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": false
+    },
+    "telegram": {
+      "enabled": false
+    },
+    "discord": {
+      "enabled": false
+    }
+  },
+  "ui": {
+    "enabled": false
+  }
+}

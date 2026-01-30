@@ -1,11 +1,11 @@
 {
   "build": {
     "node_version": "22",
-    "build_command": "pnpm install && pnpm ui:build && pnpm build",
-    "output_dir": "dist"
+    "build_command": "npm install --omit=dev",
+    "output_dir": "."
   },
   "run": {
-    "start_command": "node scripts/run-node.mjs gateway"
+    "start_command": "node server.js"
   },
   "env": {
     "PORT": {
