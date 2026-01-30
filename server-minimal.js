@@ -3,7 +3,7 @@
 // Ultra-minimal server for debugging Zeabur deployment
 const http = require('http');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 console.log('=== OpenClaw Minimal Server Starting ===');
 console.log('PORT:', PORT);
