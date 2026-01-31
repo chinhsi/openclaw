@@ -1,6 +1,6 @@
 {
   "build": {
-    "dockerfile": "./Dockerfile.final2"
+    "dockerfile": "./Dockerfile.buildstamp"
   },
   "env": {
     "PORT": {
