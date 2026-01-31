@@ -1,6 +1,6 @@
 {
   "build": {
-    "dockerfile": "./Dockerfile.production"
+    "dockerfile": "./Dockerfile.nobuild"
   },
   "env": {
     "PORT": {
