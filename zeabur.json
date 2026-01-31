@@ -1,6 +1,6 @@
 {
   "build": {
-    "dockerfile": "./Dockerfile.working"
+    "dockerfile": "./Dockerfile.production"
   },
   "env": {
     "PORT": {
